@@ -4,14 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "MSCircularSlider",
-    platforms: [
-        .iOS(.v9),
-    ],
+    name: "Presentation",
+    platforms: [.iOS(.v13)],
     products: [
         .library(
             name: "MSCircularSlider",
-            targets: ["MSCircularSlider"]
-        ),
+            targets: ["MSCircularSlider"])
+    ],
+    targets: [
+        .target(
+            name: "MSCircularSlider",
+			path: "MSCircularSlider"
+		)
     ]
 )
